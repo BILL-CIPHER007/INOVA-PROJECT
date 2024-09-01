@@ -21,3 +21,16 @@ var x = setInterval(function(){
         document.getElementById("seconds").innerHTML = "00";
     }
 },1000)
+
+
+
+function toggleDiv(divid, setaid){
+    if(document.getElementById(divid).style.display == 'none'){
+      document.getElementById(divid).style.display = 'block';
+      document.getElementById(setaid).setAttribute('src', '../IMAGENS/arrow_forward_ios_up.png')
+    }else{
+      document.getElementById(divid).style.display = 'none';
+      document.getElementById(setaid).setAttribute('src', '../IMAGENS/arrow_forward_ios_down.png')
+
+  }
+  }
