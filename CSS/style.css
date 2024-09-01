@@ -513,3 +513,81 @@ body{
   color: #1431BC;
   font-size: 45px;
 }
+
+/*CSS DE PARCERIAS*/
+
+.titulo-parcerias{
+  margin-left: 10vw;   
+}
+
+.titulo-parcerias h1{
+  font-size: 40px;
+  color: #1431BC;
+  margin-top: 0px;
+}
+
+.titulo-parcerias h2{
+  font-size: 28px;
+  color: #01C0A1;
+  margin-bottom: 0px;
+}
+
+.titulo-parcerias p{
+  margin-top: -50px;
+  font-size: 60px;
+  color: #01C0A1;
+  font-weight: 900;
+  letter-spacing: -1px
+}
+
+.add-patro{
+  margin-left: 25vw;
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  color: #3249B9;
+  margin-top: -70px;
+}
+
+.add-patro a{
+  margin-top: 10px;
+  padding-left: 20px;
+  text-decoration: none;
+  
+}
+
+.add-patro button{
+  background-color: #01C0A1;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px 10px 15px 10px;
+  color: #EFF4F7;
+  cursor: pointer;
+
+}
+
+.add-patro button:hover{
+  background-color: #1431BC;
+  transform: scale(1.06);
+  transition: all .2s ease-in-out;
+}
+
+.marcas-imgs{
+  display: flex;
+  height: auto;
+  width: auto;
+  min-width: 200px;
+  min-height: 200px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.marcas-imgs img{
+  height: 220px;
+  width: 220px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-left: 20px;
+}
