@@ -34,3 +34,13 @@ function toggleDiv(divid, setaid){
 
   }
   }
+
+let pagina_atual = 24
+
+function passar_dia(x){
+  if (pagina_atual + x >= 24 && pagina_atual + x <= 27){
+    document.getElementById("dia_" + pagina_atual.toString()).style.backgroundColor = "#C6E7E2"
+    pagina_atual = pagina_atual + x;
+    document.getElementById("dia_" + pagina_atual.toString()).style.backgroundColor = "#01C0A1"
+  }
+}
