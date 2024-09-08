@@ -44,3 +44,12 @@ function passar_dia(x){
     document.getElementById("dia_" + pagina_atual.toString()).style.backgroundColor = "#01C0A1"
   }
 }
+
+function menuHamburguer(){
+  if(document.getElementById("menu-itens").style.display == "none"){
+    document.getElementById("menu-itens").style.display = "block"
+    console.log('ola')
+  }else{
+    document.getElementById("menu-itens").style.display = "none"
+  }
+}

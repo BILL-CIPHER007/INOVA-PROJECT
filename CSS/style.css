@@ -60,6 +60,10 @@
       }
 }
 
+.menu-hamburguer{
+  display: none;
+}
+
 .folder{
   background-image: url('../IMAGENS/folder (1).png');
   background-repeat: no-repeat  ;
@@ -67,6 +71,7 @@
   display: flex;
   height: 360px;
   align-items: flex-end;
+  background-size: contain;
   
 
     button{
@@ -91,7 +96,8 @@
     a{
         background-color: #3249B9;
         border-radius: 10px;
-        margin-bottom: 20px;
+
+        margin-bottom:2vw;
         margin-right: 15%;
         
     }
@@ -109,12 +115,11 @@
 
 
   video {
-    width: 500px;
+    width: 90%;
     height: 500px;
-    padding-left: 50px;
     border-radius: 15px;
-    padding-top: 0px;
-    margin-top: -25px;
+    margin-top: 20px;
+    
     
 }
 
@@ -145,13 +150,13 @@
 
   h2 {
       margin-top: 0;
-      font-size: 20px;
+      font-size: 1.25rem;
       color: #01C0A1;
   }
 
   h1{
     margin-top: -10px;
-    font-size: 35px;
+    font-size: 2rem;
     color: #3249B9;
   }
 
@@ -172,8 +177,11 @@
 
 .video-container {
     width: auto;
+    display: flex;
+    justify-content: center;
     border-radius: 15px;
 }
+
 .timer{
   top: 0;
   position: -webkit-sticky;
@@ -182,14 +190,20 @@
   background: linear-gradient(90deg, rgba(18,180,172,1) 34%, rgba(162,224,14,1) 100%);
   display: flex;
   justify-content: center;
-  flex-basis: 300px;
+  gap:20px
 }
 
 .launch-time{
+  padding: 5px;
   display: flex;
   justify-content: center;
-  flex-basis: 300px;
+  gap: 10px;
 
+}
+
+.time-button-container{
+  display: flex;
+  justify-content: center;
 }
 
 .launch-time div{
@@ -209,13 +223,16 @@
 }
 
 .desc-time{
-  padding-right: 50px;
   font-size: 22px;
   color: #EFF4F7;
-  padding-left: 12vw;
+  display: flex;
+  justify-content: center;
+  
 }
 
-
+.desc-time p{
+  width: 150px;
+}
 
 .time-button{
   border: none;
@@ -230,8 +247,9 @@
   letter-spacing: -1px;
   width: 255px;
   height: 50px;
-  margin-left: 50px;
-  margin-top: 25px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+
 }
 
 .time-button:hover {
@@ -243,7 +261,7 @@
 
 #titulo-prog{
   color: #3249B9;
-  font-size: 43px;
+  font-size: 2rem;
   flex-direction: column;
   width: 100%;
 }
@@ -261,7 +279,7 @@
 .programacao span{
   background-color: #C6E7E2;
   border-radius: 8px;
-  width: 110px;
+  width: 10%;
   height: 20px;
   margin-right: 10px;
 }
@@ -276,12 +294,12 @@
 
 .programacao h2{
   color: #01C0A1;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .programacao h1{
   color: #3249B9;
-  font-size: 31px;
+  font-size: 2rem;
 }
 
 #linha2{
@@ -332,6 +350,7 @@
   cursor: pointer;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .card:hover{
@@ -341,8 +360,10 @@
 }
 
 .icon-card{
-  width: 76px;
-  height: 76px;
+  max-width: 76px;
+  max-height: 76px;
+  width: auto;
+  height: auto;
 }
 
 .txt-card{
@@ -355,22 +376,31 @@
 .txt-card h2{
   font-size: 27px;
   font-weight: 600;
-  margin-left: 7%;
+  margin: 0px 0px 0px 1rem
 }
 
 .txt-card span{
-  margin-left: 7%;
+  margin-left: 1rem;
   width: 100%;
   background: none;
   color: #3249B9;
-  margin-top: -20px;
   margin-bottom: 5px;
 }
 
+.arrow-div{
+  display: grid;
+}
+
 .card-arrow{
+  justify-self: end;
+  margin-bottom: 0;
   width: 28px;
   height: 28px;
-  align-self: flex-end;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
 }
 
 
@@ -385,12 +415,11 @@ body{
 
 .cards-palestrantes-right{
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
   border: #EFF4F7 1px solid;
   border-radius: 10px;
   margin-top: 20px;
-  width: auto;
+  width: 100%;
   background-color: #fff;
   margin-bottom: 50px;
 }
@@ -398,6 +427,10 @@ body{
 .infos-palestrante{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between ;
+  padding-left: 20px;
+  width: 100%;
 }
 
 .cards-palestrantes-left{
@@ -410,6 +443,7 @@ body{
   width: auto;
   background-color: #fff;
   margin-bottom: 50px;
+  flex-wrap: wrap-reverse;
 
 
 }
@@ -417,10 +451,11 @@ body{
 .img-card-palestrante-left{
   height: auto;
   width: auto;
-  min-width: 200px;
+  min-width: 250px;
   min-height: 200px;
   padding-left: 0px;
   padding-right: 0%;
+  grid-area: foto;
 }
 
 .img-card-palestrante-left img{
@@ -433,9 +468,8 @@ body{
 .img-card-palestrante-right{
   height: auto;
   width: auto;
-  min-width: 200px;
+  min-width: 250px;
   min-height: 200px;
-  padding-right: 30px;
 }
 
 .img-card-palestrante-right img{
@@ -447,7 +481,7 @@ body{
 
 .txt-palestrante h1{
   color: #1431BC;
-  font-size: 32px;
+  font-size: 1.75rem;
   margin-top: 0%;
   margin-bottom: 0%;
 }
@@ -460,9 +494,10 @@ body{
 
 .txt-palestrante-left h1{
   color: #1431BC;
-  font-size: 32px;
+  font-size: 1.75rem;
   margin-top: 0%;
   margin-bottom: 0%;
+  grid-area: texto;
 }
 
 .txt-palestrante-left h2{
@@ -511,6 +546,7 @@ body{
 }
 
 .links-palestrante-left{
+  grid-area: links;
   width: auto;
   margin-top: 49px;
   margin-left: 140px;
@@ -533,7 +569,7 @@ body{
 
 .titulo-palestrante{
   color: #1431BC;
-  font-size: 45px;
+  font-size: 2rem;
 }
 
 
@@ -546,7 +582,7 @@ body{
 
 .minicursos > h1{
   color: #3249B9;
-  font-size: 2.625rem;
+  font-size: 2rem;
 }
 
 .minicursos-row{
@@ -554,6 +590,7 @@ body{
   justify-content: space-between;
   padding: 0 10px;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .minicurso{
@@ -595,14 +632,14 @@ body{
 
 
 .titulo-parcerias h1{
-  font-size: 40px;
+  font-size: 2rem;
   color: #1431BC;
   margin: 0px;
 
 }
 
 .titulo-parcerias h2{
-  font-size: 28px;
+  font-size: 1.5rem;
   color: #01C0A1;
   margin-bottom: 0px;
 }
@@ -618,14 +655,16 @@ body{
 .add-patro{
   display: flex;
   flex-direction: row;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #3249B9;
   justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+  gap: 10px;
 }
 
 .add-patro a{
   margin-top: 10px;
-  padding-left: 20px;
   text-decoration: none;
   
 }
@@ -655,20 +694,21 @@ body{
   min-width: 200px;
   min-height: 200px;
   justify-content: center;
-  margin-bottom: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .marcas-imgs img{
   height: 220px;
   width: 220px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  margin-left: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 
 
-/* ÁREA DE DÚVIDAS*/
+/* ÁREA DE DÚVIDAS */
 
 .duvidas{
   width: 90%;
@@ -678,7 +718,7 @@ body{
 .duvidas > h1{
   text-align: center;
   color: #3249B9;
-  font-size: 2.625rem;
+  font-size: 2rem;
 }
 
 .duvida{
@@ -716,4 +756,167 @@ footer{
   background-color: #3249B9;
   padding: 12px;
   font-weight: bold;
+}
+
+@media screen  and (max-width: 1329px){
+  .card-sbr-nos{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .timer{
+    flex-direction: column;
+    gap:0px
+  }
+
+  .desc-time p{
+    width: auto;
+    margin: 20px auto;
+  }
+
+
+  .launch-time{
+    height: auto;
+  }
+}
+
+@media screen  and (max-width: 949px){
+  .folder button{
+    padding: 0.5rem 0.5rem;
+    font-size: 0.75rem;
+
+  }
+  .data-button{
+    flex-direction: column;
+    justify-content: left;
+  }
+
+  .card{
+    background-color: #EFF4F7;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards-palestrantes-right{
+    flex-direction: column  ;
+  }
+
+  .cards-palestrantes-left{
+    display: grid;
+    grid-template-areas: 'foto'
+                         'texto'
+                         'links';
+  }
+  .infos-palestrante{
+    flex-direction: column;
+  }
+  /*.titulo-parcerias p{
+    font-weight: 200;
+  }*/
+}
+
+@media screen and (max-width: 665px) {
+  .folder{
+    background-image: url('../IMAGENS/Frame\ 2.svg');
+
+  background-position: center; 
+  }
+
+  .folder a{
+    margin-bottom: -33vw;
+    margin-right: 20px;
+    align-self: center;
+  }
+
+
+  
+  .menu-hamburguer{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    font-size: 1.5rem;
+    color: #01C0A1;
+    cursor: pointer;
+  }
+  .navbar{
+    padding:10px 0px;
+    display: grid;
+    grid-template-columns: 10% 90%;
+  }
+  
+  .navbar img{
+    margin-left: 30%;
+    padding: 0 ;
+  }
+  .navbar ul li{
+    float: none;
+  }
+  #menu-itens{
+    display: none;
+    grid-column:1 / span 2;
+  }
+  
+  #linha2{
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 466px) {
+  
+
+  
+  .img-card-palestrante-right img{
+    height: auto;
+    width: 100%;
+
+  }
+  .img-card-palestrante-left img{
+    height: auto;
+    width: 100%;
+
+  }
+
+  .links-palestrante-left{
+    margin-left: 0;
+  }
+  .txt-palestrante-left{
+    margin-left: 0;
+  }
+
+  .minicursos-row{
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1222px) {
+  .folder a{
+    margin-top: 17vw;
+    margin-right: 20px;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 1074px) {
+  .folder a{
+    margin-top: 14vw;
+    margin-right: 20px;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .folder a{
+    margin-top: 10vw;
+    margin-right: 30px;
+    align-self: center;
+  }
+
+  .folder button{
+    padding: 0.75rem 0.5rem;
+
+  }
 }
