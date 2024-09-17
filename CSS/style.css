@@ -386,7 +386,12 @@
   margin-left: 1rem;
   width: 100%;
   background: none;
+/* -------lais------*/
   color: #3249B9;
+/*==================*/
+  color: #1431BC;
+  margin-top: -20px;
+/*-------main-------*/
   margin-bottom: 5px;
 }
 
@@ -408,9 +413,193 @@
 
 
 body{
-  background-color: #EFF4F7;
+  background-color: #e3ebea;
 }
 
+
+/*CSS DE PALESTRANTE*/
+.palestrantes{
+  display: block;
+}
+
+.cards-palestrantes-right{
+  display: flex;
+  flex-direction: row;
+  border: #EFF4F7 1px solid;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: auto;
+  background-color: #EFF4F7;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 50px
+}
+
+.cards-palestrantes-left{
+  display: flex;
+  flex-direction: row;
+  border: #EFF4F7 1px solid;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: auto;
+  background-color: #EFF4F7;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 50px;
+
+}
+
+.img-card-palestrante-left{
+  height: auto;
+  width: auto;
+  min-width: 200px;
+  min-height: 200px;
+  padding-left: 0px;
+  padding-right: 0%;
+}
+
+.img-card-palestrante-left img{
+  height: 250px;
+  width: 250px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.img-card-palestrante-right{
+  height: auto;
+  width: auto;
+  min-width: 200px;
+  min-height: 200px;
+  padding-right: 30px;
+}
+
+.img-card-palestrante-right img{
+  height: 250px;
+  width: 250px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.txt-palestrante h1{
+  color: #1431BC;
+  font-size: 32px;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.txt-palestrante h2{
+  color: #01C0A1;
+  font-size: 20px;
+  margin-bottom: 0%;
+}
+
+.txt-palestrante-left h1{
+  color: #1431BC;
+  font-size: 32px;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.txt-palestrante-left h2{
+  color: #01C0A1;
+  font-size: 20px;
+  margin-bottom: 0%;
+}
+
+.txt-palestrante-left{
+  margin-left: 50px;
+}
+
+.area-tematica{
+  display: flex;
+  margin-top: 2px;
+}
+
+.area-tematica span{
+  background-color: #01C0A1;
+  border-radius: 10px;
+  padding: 5px 12px 5px 12px;
+  font-size: 16px;
+  color: #EFF4F7;
+  margin-right: 10px;
+}
+
+.desc-palestrante{
+  color: #3249B9;
+  font-size: 24px;
+  margin-top: 0%;
+}
+
+.links-palestrante a{
+  background-color: #01C0A1;
+  color: #EFF4F7;
+  margin-right: 10px;
+  border-radius: 8px;
+  font-size: 28px;
+  text-decoration: none;
+  padding: 3px 0px 3px 7px;
+}
+
+.links-palestrante{
+  width: auto;
+  margin-top: 49px;
+  margin-left: 150px;
+}
+
+.links-palestrante-left{
+  width: auto;
+  margin-top: 49px;
+  margin-left: 140px;
+  margin-right: 20px;
+}
+
+.links-palestrante-left a{
+  background-color: #01C0A1;
+  color: #EFF4F7;
+  margin-right: 10px;
+  border-radius: 8px;
+  font-size: 28px;
+  text-decoration: none;
+  padding: 3px 0px 3px 7px;
+}
+
+.fa-linkedin{
+  padding-right: 7px;
+}
+
+.titulo-palestrante{
+  margin-left: 10vw;
+  color: #1431BC;
+  font-size: 45px;
+}
+
+/*CSS DE PARCERIAS*/
+
+.titulo-parcerias{
+  margin-left: 10vw;   
+}
+
+.titulo-parcerias h1{
+  font-size: 40px;
+  color: #1431BC;
+  margin-top: 0px;
+}
+
+.titulo-parcerias h2{
+  font-size: 28px;
+  color: #01C0A1;
+  margin-bottom: 0px;
+}
+
+.titulo-parcerias p{
+  margin-top: -50px;
+  font-size: 60px;
+  color: #01C0A1;
+  font-weight: 900;
+  letter-spacing: -1px
+}
+
+/* -------lais------*/
 .palestrantes{
   padding: 24px;
   margin: 0 auto;
@@ -687,10 +876,23 @@ body{
   margin-bottom: 12px;
   gap: 24px;
   align-items: center;
+/*==================*/
+.add-patro{
+  margin-left: 25vw;
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  color: #3249B9;
+  margin-top: -70px;
+/*-------main-------*/
 }
 
 .add-patro a{
   margin-top: 10px;
+/* -------lais------*/
+/*==================*/
+  padding-left: 20px;
+/*-------main-------*/
   text-decoration: none;
   
 }
@@ -704,7 +906,11 @@ body{
   padding: 15px 10px 15px 10px;
   color: #EFF4F7;
   cursor: pointer;
+/* -------lais------*/
   font-family:"Montserrat"
+/*==================*/
+
+/*-------main-------*/
 }
 
 .add-patro button:hover{
@@ -720,14 +926,19 @@ body{
   min-width: 200px;
   min-height: 200px;
   justify-content: center;
+/* -------lais------*/
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
+/*==================*/
+  margin-bottom: 10px;
+/*-------main-------*/
 }
 
 .marcas-imgs img{
   height: 220px;
   width: 220px;
+/* -------lais------*/
   border-radius: 10px;
   margin-bottom: 10px;
 }
@@ -1031,4 +1242,9 @@ footer{
     padding: 0.75rem 0.5rem;
 
   }
+/*==================*/
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-left: 20px;
+/*-------main-------*/
 }
